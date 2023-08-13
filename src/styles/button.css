@@ -1,0 +1,24 @@
+.button {
+    cursor: pointer;
+}
+.button.catalog {
+    width: 118px;
+    height: 42px;
+    background: #e21515;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.button.catalog p {
+    margin-left: 5px;
+}
+.button.catalog:hover {
+    background: #cf1414;
+    transition: 0.2s;
+}
