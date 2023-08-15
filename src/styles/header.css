@@ -1,3 +1,6 @@
+header {
+    flex: 0 0 auto;
+}
 .headerbar {
     width: 100%;
     height: 28px;
@@ -51,16 +54,32 @@
 }
 .phonenumbers {
     margin-left: 8px;
-    
+    display: flex;
+    flex-direction: column;
+}
+.hotlinesite {
+    display: flex;
+    transition: 0.2s;
+    align-items: center;
+}
+.hotlinesite:hover {
+    transition: 0.2s;
+    color: rgb(184, 184, 184);
+}
+.hotlinebrand {
+    display: flex;
+    transition: 0.2s;
+    align-items: center;
+}
+.hotlinebrand:hover {
+    transition: 0.2s;
+    color: rgb(184, 184, 184);
 }
 .phonenumbers p {
-    transition: 0.2s;
     cursor: pointer;
+    padding-left: 5px;
 }
-.phonenumbers p:hover {
-    color: rgb(145, 137, 137);
-    transition: 0.2s;
-}
+
 .logo {
     width: 33.3%;
     flex: 1 1 auto;

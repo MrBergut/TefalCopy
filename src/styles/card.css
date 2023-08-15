@@ -1,0 +1,28 @@
+.card {
+    width: 152px;
+    height: 47px;
+    padding: 16px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.2s;
+    margin-right: 15px;
+}
+.cardImg {
+    position: absolute;
+    padding-left: 90px;
+}
+.cardText {
+    z-index: 1;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.card:hover {
+    transition: 0.2s;
+    background: #e21515;
+    color: #ffffff;
+}

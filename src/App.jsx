@@ -1,12 +1,13 @@
 import Header from './containers/Header';
+import Content from './containers/Content';
 
-import logo from './assets/images/qu.svg';
 import './App.css';
 
 function App() {
   return (
     <>
       <Header />
+      <Content />
     </>
   )
 }

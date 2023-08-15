@@ -1,0 +1,38 @@
+main {
+    flex: 1 1 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.giftсertificatetext {
+    font-size: 14px;
+    font-weight: 600;
+}
+.contentCards {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+.stock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.stocktopbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.8% 20px 3.8%;
+}
+.stocktopbar a {
+    color: #7e7e7e;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.stocktopbar a:hover {
+    color: #999999;
+    transition: 0.2s;
+}
+.stockimages {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

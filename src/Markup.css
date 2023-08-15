@@ -15,11 +15,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-.header {
+header {
     flex: 0 0 auto;
 }
-.content {
+main {
     flex: 1 1 auto;
+    margin-top: 58px;
 }
 .footer {
     flex: 0 0 auto;

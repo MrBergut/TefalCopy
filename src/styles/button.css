@@ -22,3 +22,22 @@
     background: #cf1414;
     transition: 0.2s;
 }
+.button.giftсertificate {
+    background: #cf1414;
+    color: #fff;
+    display: flex;
+    width: 184px;
+    height: 79px;
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+}
+.button.giftсertificate:hover {
+    background: #f1f1f1;
+    color: #080808;
+    transition: 0.2s;
+}
