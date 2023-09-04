@@ -1,26 +1,33 @@
 main {
     flex: 1 1 auto;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background: #f7f7f7;
 }
 .giftсertificatetext {
     font-size: 14px;
     font-weight: 600;
 }
+.content {
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
 .contentCards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 20px 0 20px 0;
 }
 .stock {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .stocktopbar {
     display: flex;
     justify-content: space-between;
-    padding: 0 3.8% 20px 3.8%;
 }
 .stocktopbar a {
     color: #7e7e7e;
@@ -33,6 +40,19 @@ main {
 }
 .stockimages {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
+}
+.offerscard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offers {
+    width: 100%;
+}
+.offerstext {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 8px;
 }
