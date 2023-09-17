@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Stock from "../components/Stock";
 import TransformImages from "../components/TransforImage";
 import Offer from "../components/Offer";
+import ThatNeed from "../components/ThatNeed";
 
 import '../styles/content.css';
 import careforyou from '../assets/images/care-for-you.png';
@@ -18,6 +19,12 @@ import product2467 from '../assets/images/product_2467_1.jpg';
 import product2643 from '../assets/images/product_2643_1.jpg';
 import product2690 from '../assets/images/product_2690_1.png';
 import product3489 from '../assets/images/product_3489_37.png';
+import grills from '../assets/images/grills-new1.png';
+import cleaners from '../assets/images/cleaners-new1.png';
+import climatic from '../assets/images/climatic-new1.png';
+import dishes from '../assets/images/dishes-new1.png';
+import irons from '../assets/images/irons-new1.png';
+import kettles from '../assets/images/kettles-new1.png';
 
 export default function Content() {
     return (
@@ -50,13 +57,24 @@ export default function Content() {
                         </div>
                     </div>
                     <div className="offers">
-                        <p className="offerstext">Бестеллеры</p>
+                        <h2>Бестеллеры</h2>
                         <div className="offerscard">
                             <Offer src={product2236} name="утюг" price="2 480" oldprice="3 890" discount="-23%"/>
                             <Offer src={product2467} name="половая тряпка" price="1 698" oldprice="4 500" discount="-78%"/>
                             <Offer src={product2643} name="улучшенная половая тряпка" price="2 780" oldprice="6 900" discount="-66%"/>
                             <Offer src={product2690} name="французкий пылесос / сосёт за копейки" price="15 808" oldprice="21 500" discount="-31%"/>
                             <Offer src={product3489} name="освежитель воздуха" price="9 098" oldprice="4 500" discount="+51%"/>
+                        </div>
+                    </div>
+                    <div className="everything_that_needed">
+                        <h2>Всё, что тебе нужно</h2>
+                        <div className="everything_that_needed_card">
+                            <ThatNeed category="приготовление еды" src={grills}/>
+                            <ThatNeed category="посуда" src={dishes}/>
+                            <ThatNeed category="наборы для завтрака" src={kettles}/>
+                            <ThatNeed category="пылесос" src={cleaners}/>
+                            <ThatNeed category="климат" src={climatic}/>
+                            <ThatNeed category="уход за одеждой" src={irons}/>
                         </div>
                     </div>
                 </div>

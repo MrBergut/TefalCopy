@@ -10,7 +10,7 @@ main {
     font-weight: 600;
 }
 .content {
-    min-width: 60%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -51,8 +51,12 @@ main {
 .offers {
     width: 100%;
 }
-.offerstext {
-    font-size: 26px;
-    font-weight: 600;
-    padding-bottom: 8px;
+.everything_that_needed {
+    margin: 20px 0 20px 0;
+}
+.everything_that_needed_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
 }

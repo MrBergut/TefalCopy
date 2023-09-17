@@ -1,0 +1,26 @@
+.that_need {
+    width: 32%;
+    height: 160px;
+    border-radius: 7px;
+    background: #f1f1f1;
+    margin-top: 20px;
+    display: flex;
+    transition: 0.2s;
+}
+.that_need_category {
+    flex: 1 1 auto;
+    margin: 10px;
+    font-size: 20px;
+    font-size: 700;
+    color: #adadad;
+}
+.that_need_image {
+    flex: 0 0 auto;
+}
+.that_need:hover {
+    transform: translate(0, -8px);
+    transition: 0.2s;
+    -webkit-box-shadow: 0px 9px 10px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 9px 10px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 9px 10px 4px rgba(34, 60, 80, 0.2);
+}
