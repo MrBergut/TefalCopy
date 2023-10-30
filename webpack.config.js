@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -26,10 +27,9 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            ['@babel/preset-env', { targets: "defaults" }],
-                            "@babel/preset-react"
+                             "@babel/preset-env",
+                            ["@babel/preset-react", {"runtime": "automatic"}]
                         ],
-                        plugins: ['@babel/plugin-proposal-class-properties']
                     }
                 }
             },
@@ -53,7 +53,8 @@ module.exports = {
             watch: true
         },
         compress: false,
-        port: 4002
+        hot: true,
+        port: 3004
     },
     plugins: [
         // new CopyPlugin({
@@ -64,8 +65,9 @@ module.exports = {
         //         }
         //     ],
         // }),
+        new CleanWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin(),
-        // new CleanWebpackPlugin()
     ],
     resolve: {
         extensions: ['.js', '.jsx']
